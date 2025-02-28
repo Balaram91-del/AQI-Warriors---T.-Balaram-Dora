@@ -22,6 +22,8 @@ public class CalculatorApplication extends Application {
         stage.setScene(scene);
         stage.setFullScreen(false);
         Image icon = new Image(getClass().getResourceAsStream("/image/carbon_footprint_calculator_icon.png"));
+        String css = this.getClass().getResource("Styling.css").toExternalForm();
+        scene.getStylesheets().add(css);
         stage.getIcons().add(icon);
         stage.show();
     }
