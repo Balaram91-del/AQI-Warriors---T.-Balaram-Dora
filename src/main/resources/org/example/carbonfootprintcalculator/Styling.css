@@ -34,3 +34,47 @@
 .root {
     -fx-background-color: #3b2f2f; /* Same as UI background */
 }
+.button{
+    -fx-background-radius: 50 50 50 50;
+    -fx-background-color: #2a2424;
+}
+#houseSize{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}
+#busTravel{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}
+#metroTravel{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}
+#trainTravel{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}
+#electricityBill{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}
+#renewableBill{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}
+#gasBill{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}
+#stuffSpending{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}
+#clotheSpending{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}
+#serviceSpending{
+    -fx-text-fill: white;
+    -fx-background-radius: 50 50 50 50;
+}

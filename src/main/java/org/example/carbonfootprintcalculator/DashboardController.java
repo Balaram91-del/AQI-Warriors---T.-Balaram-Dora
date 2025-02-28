@@ -29,7 +29,7 @@ public class DashboardController {
         stage.close();
     }
     public void CfCalculatorAction(ActionEvent event) throws IOException{
-        root1 = FXMLLoader.load(getClass().getResource("cfCalculator1.fxml"));
+        root1 = FXMLLoader.load(getClass().getResource("CF_Calculator1.fxml"));
         stage1 = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene1 = new Scene(root1);
         stage1.setScene(scene1);
