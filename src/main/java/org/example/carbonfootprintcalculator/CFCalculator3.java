@@ -87,7 +87,7 @@ public class CFCalculator3 implements Initializable {
     //Method for AI Suggestions
     public static String aiSuggestions(HashMap<String, Double> data) {
         String apiUrl = "https://openrouter.ai/api/v1/chat/completions";
-        String apiKey = "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";
+        String apiKey = "";
         JSONObject jsonData = new JSONObject(data);
         String prompt = "Analyze the following carbon footprint data of a month, categorized by cause and reason, and provide actionable suggestions for reducing it. Data: " + jsonData.toString() + ".  Please keep the suggestions concise and under 150 words, and focus on practical steps the person can take.";
 
