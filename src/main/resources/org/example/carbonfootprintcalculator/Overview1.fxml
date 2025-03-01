@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1319.0" style="-fx-background-color: #3b2f2f;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.carbonfootprintcalculator.Overview1">
+   <children>
+      <Label layoutX="142.0" layoutY="68.0" text="Your Carbon Footprint, Your Responsibility – Take Action Now!" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="135.0" prefHeight="282.0" prefWidth="1224.0" text="Global warming is one of the most pressing challenges of our time, affecting both humanity and the planet in profound ways. Rising global temperatures lead to extreme weather events, including hurricanes, wildfires, droughts, and heatwaves, which threaten lives and livelihoods. Melting ice caps and rising sea levels endanger coastal communities, while disrupted ecosystems push many species toward extinction. Agriculture suffers from unpredictable climate patterns, leading to food shortages and economic instability. Moreover, air pollution and heat-related illnesses pose serious health risks to people worldwide. As greenhouse gas emissions continue to rise, the urgency to take action grows. Global warming is not just an environmental issue—it is a social, economic, and ethical crisis that demands immediate and collective efforts to mitigate its impact and secure a sustainable future for generations to come." textFill="#fffefe" wrapText="true" AnchorPane.bottomAnchor="433.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1Overview" alignment="CENTER" layoutX="92.0" layoutY="450.0" prefHeight="244.0" prefWidth="200.0" style="-fx-background-color: #2a2424;" stylesheets="@styling.css" text="What Is Carbon Footprint ?" textAlignment="CENTER" textFill="#fcfcfc" wrapText="true">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2Overview" alignment="CENTER" layoutX="333.0" layoutY="450.0" prefHeight="244.0" prefWidth="200.0" style="-fx-background-color: #2a2424;" stylesheets="@styling.css" text="What Is Global Warmming ?" textAlignment="CENTER" textFill="#fcfcfc" wrapText="true">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4Overview" layoutX="816.0" layoutY="450.0" prefHeight="244.0" prefWidth="200.0" style="-fx-background-color: #2a2424;" stylesheets="@styling.css" text="How To Reduce your Carbon Footprint ?" textAlignment="CENTER" textFill="#fcfcfc" wrapText="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3Overview" layoutX="576.0" layoutY="450.0" prefHeight="244.0" prefWidth="200.0" style="-fx-background-color: #2a2424;" stylesheets="@styling.css" text="What Is Air Pollution &amp; How it Happens ??" textAlignment="CENTER" textFill="#fcfcfc" wrapText="true">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="label5Overview" alignment="CENTER" layoutX="1059.0" layoutY="450.0" prefHeight="244.0" prefWidth="200.0" style="-fx-background-color: #2a2424;" stylesheets="@styling.css" text="Future ?!" textFill="#fcfcfc" wrapText="true">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonGoBackOverview" layoutX="1159.0" layoutY="778.0" mnemonicParsing="false" onAction="#swichToMainScene" prefHeight="38.0" prefWidth="127.0" style="-fx-background-color: #2a2424;" stylesheets="@styling.css" text="   Go Back" textAlignment="CENTER" textFill="WHITE" />
+      <ImageView fitHeight="30.0" fitWidth="57.0" layoutX="1171.0" layoutY="783.0" pickOnBounds="true" preserveRatio="true" rotate="-178.2">
+         <image>
+            <Image url="@../../../image/icons8-arrow-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

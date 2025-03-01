@@ -12,11 +12,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static org.example.carbonfootprintcalculator.Login.loggedInUsername;
+
 public class DashboardController {
 
-    private Stage stage1;
-    private Scene scene1;
-    private Parent root1;
+    private Stage stage1,stage2,stage3;
+    private Scene scene1,scene2,scene3;
+    private Parent root1,root2,root3;
 
     @FXML
     private Label welcomeText;
@@ -24,6 +26,10 @@ public class DashboardController {
     Button signOutButton;
     @FXML
     Button cfCalculatorButton;
+    @FXML
+    Label usernameLabel;
+    //private String loggedInUsername;
+
     public void signOutAction(ActionEvent event) throws IOException{
         Stage stage = (Stage) signOutButton.getScene().getWindow();
         stage.close();
@@ -35,4 +41,27 @@ public class DashboardController {
         stage1.setScene(scene1);
         stage1.show();
     }
+    public void OverviewAction(ActionEvent event) throws IOException{
+        root2 = FXMLLoader.load(getClass().getResource("Overview1.fxml"));
+        stage2 = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene2 = new Scene(root2);
+        stage2.setScene(scene2);
+        stage2.show();
+    }
+
+    public void goToCarbonPoints(ActionEvent event) throws IOException{
+        root3 = FXMLLoader.load(getClass().getResource("carbonPoints.fxml"));
+        stage3 = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene3 = new Scene(root3);
+        stage3.setScene(scene3);
+        stage3.show();
+    }
+//    public void displayUsername(String username){
+//        usernameLabel.setText(username);
+//    }
+//public void setUsername(String username) {
+//    this.(Login.loggedInUsername) = username;
+//    if(usernameLabel != null){
+//        usernameLabel.setText(Login.loggedInUsername); //Example of using the username.
+//    }
 }

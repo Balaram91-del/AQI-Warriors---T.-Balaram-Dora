@@ -28,12 +28,12 @@
                   <Image url="@../../../image/user-account.png" />
                </image>
             </ImageView>
-            <Label layoutX="139.0" layoutY="179.0" text="Profile" textFill="WHITE">
+            <Label fx:id="usernameLabel" alignment="CENTER" layoutY="184.0" prefHeight="32.0" prefWidth="345.0" text="Profile" textFill="WHITE">
                <font>
                   <Font size="22.0" />
                </font>
             </Label>
-            <Button layoutY="277.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="340.0" style="-fx-background-color: #2a2424;" text=" Overview" textFill="WHITE">
+            <Button fx:id="overviewButton" layoutY="277.0" mnemonicParsing="false" onAction="#OverviewAction" prefHeight="63.0" prefWidth="340.0" style="-fx-background-color: #2a2424;" text=" Overview" textFill="WHITE">
                <font>
                   <Font size="22.0" />
                </font>
@@ -55,7 +55,7 @@
                   <Font size="22.0" />
                </font>
             </Button>
-            <Button layoutX="-2.0" layoutY="401.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="345.0" style="-fx-background-color: #2a2424;" text="Carbon Points" textFill="WHITE">
+            <Button layoutX="-2.0" layoutY="401.0" mnemonicParsing="false" onAction="#goToCarbonPoints" prefHeight="63.0" prefWidth="345.0" style="-fx-background-color: #2a2424;" text="Carbon Points" textFill="WHITE">
                <font>
                   <Font size="22.0" />
                </font>

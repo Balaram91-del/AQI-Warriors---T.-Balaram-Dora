@@ -13,7 +13,7 @@ import java.io.IOException;
 public class CalculatorApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("dashboard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         Scene scene = new Scene(root);
         //stage.initStyle(StageStyle.UNDECORATED);
         stage.setTitle("Carbon Footprint Calculator");

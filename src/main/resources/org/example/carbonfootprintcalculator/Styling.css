@@ -78,3 +78,108 @@
     -fx-text-fill: white;
     -fx-background-radius: 50 50 50 50;
 }
+#label1Overview{
+    -fx-background-radius: 0 50 50 50;
+}
+#label2Overview{
+    -fx-background-radius: 0 50 50 50;
+}
+#label3Overview{
+    -fx-background-radius: 0 50 50 50;
+}
+#label4Overview{
+    -fx-background-radius: 0 50 50 50;
+}
+#label5Overview{
+    -fx-background-radius: 0 50 50 50;
+}
+#barchart .chart-plot-background {
+    -fx-background-color: #3b2f2f;
+}
+#barchart .chart-vertical-grid-lines,
+#barchart .chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
+#barchart .axis .chart-tick-label {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 2, 2);
+}
+#barchart .axis{
+    -fx-tick-mark-visible: false;
+}
+#barchart .chart-bar {
+    -fx-bar-fill: #89a9e7;
+}
+#barchart .chart-title { /* Graph title */
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#barchart .chart-axis { /* Axes labels */
+    -fx-tick-label-fill: white; /* Correct property for axis labels */
+}
+
+#piechart .chart-pie-label {
+    -fx-font-size: 14px;
+    -fx-fill: white;
+}
+
+#piechart .chart-legend {
+    -fx-background-color: transparent;
+}
+
+#piechart .chart-legend-item-symbol { /* Fixed: Underscore changed to hyphen */
+    -fx-background-radius: 5px;
+}
+
+#piechart .chart-legend-item { /* Fixed: Removed extra space before `.chart-legend-item` */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+#barchart .chart-legend { /* Fixed: Removed extra space before `.chart-legend` */
+    -fx-background-color: transparent;
+}
+
+#barchart .chart-legend-item{
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+#barchart .chart-plot-background {
+    -fx-background-color: #3b2f2f;
+}
+#barchart .chart-vertical-grid-lines,
+#barchart .chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
+#barchart .axis .chart-tick-label {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 2, 2);
+}
+#barchart .axis{
+    -fx-tick-mark-visible: false;
+}
+#barchartCarbonPoints .chart-bar {
+    -fx-bar-fill: #89a9e7;
+}
+#barchartCarbonPoints .chart-title { /* Graph title */
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#barchartCarbonPoints .chart-axis { /* Axes labels */
+    -fx-tick-label-fill: white; /* Correct property for axis labels */
+}
+#barchartCarbonPoints .chart-vertical-grid-lines,
+#barchartCarbonPoints .chart-horizontal-grid-lines {
+    -fx-stroke: transparent;
+}
+#barchartCarbonPoints .chart-plot-background {
+    -fx-background-color: #3b2f2f;
+}

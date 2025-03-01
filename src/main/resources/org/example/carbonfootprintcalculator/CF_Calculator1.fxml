@@ -30,29 +30,27 @@
                   <Image url="@../../../image/icons8-car-64%20(1).png" />
                </image>
             </ImageView>
-            <Label fx:id="bikesLabel" layoutX="758.0" layoutY="269.0" prefHeight="84.0" prefWidth="347.0" text="How many bikes do you have ?" textFill="WHITE" wrapText="true">
+            <Label fx:id="bikesLabel" layoutX="758.0" layoutY="269.0" prefHeight="84.0" prefWidth="347.0" text="Distance travelled by bike in this month ?(In km)" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="27.0" />
                </font>
             </Label>
-            <Label fx:id="carsLable" layoutX="389.0" layoutY="269.0" prefHeight="83.0" prefWidth="331.0" text="How many cars do you have ?" textFill="WHITE" wrapText="true">
+            <Label fx:id="carsLable" layoutX="389.0" layoutY="269.0" prefHeight="83.0" prefWidth="331.0" text="Distance travelled by car in this month ?(In km)" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="27.0" />
                </font>
             </Label>
-            <ComboBox fx:id="carsCombobox" layoutX="469.0" layoutY="350.0" prefHeight="35.0" prefWidth="148.0" promptText="No of Cars" style="-fx-background-color: #2a2424;" />
-            <ComboBox fx:id="bikesCombobox" layoutX="842.0" layoutY="348.0" prefHeight="35.0" prefWidth="155.0" promptText="No of Bikes" style="-fx-background-color: #2a2424;" />
             <ImageView fx:id="flightIcon" fitHeight="120.0" fitWidth="145.0" layoutX="204.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../image/airplane%20(1).png" />
                </image>
             </ImageView>
-            <Label layoutX="389.0" layoutY="449.0" prefHeight="102.0" prefWidth="341.0" text="How many long flights do you take in a year ?" textFill="WHITE" wrapText="true">
+            <Label layoutX="389.0" layoutY="449.0" prefHeight="102.0" prefWidth="341.0" text="How many long flights do you take in this month ?" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="27.0" />
                </font>
             </Label>
-            <Label layoutX="766.0" layoutY="449.0" prefHeight="102.0" prefWidth="341.0" text="How many short flights do you take in a year ?" textFill="WHITE" wrapText="true">
+            <Label layoutX="766.0" layoutY="449.0" prefHeight="102.0" prefWidth="341.0" text="How many short flights do you take in this month ?" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="27.0" />
                </font>
@@ -138,7 +136,7 @@
                </font>
             </Label>
             <TextField fx:id="houseSize" layoutX="437.0" layoutY="1650.0" prefHeight="45.0" prefWidth="216.0" promptText="eg: 69" style="-fx-background-color: #2a2424;" />
-            <Label layoutX="390.0" layoutY="1760.0" text="How much do you travel by Bus per week ?(in km) " textFill="WHITE">
+            <Label layoutX="390.0" layoutY="1760.0" text="How much do you travel by Bus this month?(in km) " textFill="WHITE">
                <font>
                   <Font size="27.0" />
                </font>
@@ -159,7 +157,7 @@
                   <Image url="@../../../image/subway-train.png" />
                </image>
             </ImageView>
-            <Label layoutX="389.0" layoutY="1940.0" text="How much do you travel by Metro per week ?(in km) " textFill="WHITE">
+            <Label layoutX="389.0" layoutY="1940.0" text="How much do you travel by Metro this month ?(in km) " textFill="WHITE">
                <font>
                   <Font size="27.0" />
                </font>
@@ -176,7 +174,7 @@
                   <Image url="@../../../image/train_433515.png" />
                </image>
             </ImageView>
-            <Label layoutX="393.0" layoutY="2120.0" text="How much do you travel by inter city rail each year?(in km)" textFill="WHITE">
+            <Label layoutX="393.0" layoutY="2120.0" text="How much do you travel by inter city rail this month?(in km)" textFill="WHITE">
                <font>
                   <Font size="27.0" />
                </font>
@@ -273,11 +271,25 @@
                </font>
             </Button>
             <TextField fx:id="metroTravel" layoutX="429.0" layoutY="2000.0" prefHeight="45.0" prefWidth="213.0" promptText="eg: 69" style="-fx-background-color: #2a2424;" />
-            <Button fx:id="showResult" layoutX="1096.0" layoutY="3600.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="135.0" text="Show Result" textFill="WHITE">
+            <Button fx:id="showResult" layoutX="1096.0" layoutY="3600.0" mnemonicParsing="false" onAction="#nextScene" prefHeight="39.0" prefWidth="135.0" text="Show Result" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
+            <TextField fx:id="carTextfield" layoutX="425.0" layoutY="366.0" prefHeight="45.0" prefWidth="220.0" promptText="eg: 69" style="-fx-background-color: #2a2424;" />
+            <TextField fx:id="bikeTextfield" layoutX="778.0" layoutY="366.0" prefHeight="45.0" prefWidth="220.0" promptText="eg: 69" style="-fx-background-color: #2a2424;" />
+            <Label layoutX="893.0" layoutY="62.0" text="Choose Year &amp; Month" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="monthCombobox" layoutX="887.0" layoutY="123.0" prefHeight="37.0" prefWidth="150.0" promptText="Month" style="-fx-background-color: #2a2424;" />
+            <ComboBox fx:id="yearCombobox" layoutX="1037.0" layoutY="123.0" prefHeight="38.0" prefWidth="150.0" promptText="Year" style="-fx-background-color: #2a2424;" />
+            <ImageView fitHeight="118.0" fitWidth="85.0" layoutX="779.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/number-1.png" />
+               </image>
+            </ImageView>
          </children></AnchorPane>
   </content>
 </ScrollPane>
