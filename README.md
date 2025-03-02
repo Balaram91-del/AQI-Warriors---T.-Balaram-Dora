@@ -22,7 +22,11 @@ Java (Backend logic and calculations)
 
 JavaFX (UI/UX development)
 
-SceneBuilder
+SceneBuilder(Desgining UI)
+
+JDBC(Connection to Database)
+
+Mysql(To Store all the user data)
 
 Excel Integration (For importing/exporting user data)
 
